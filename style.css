@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Zilla Slab", serif;
+    font-weight: 400;
+}
+
+/* Navbar style */
+
+.navbar {
+    background-color: #DAF7A6;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+
+    max-width: 100px;
+    height: 100px;
+}
+
+/* Book style */
+.book-container {
+    padding: 30px;
+    /* position: relative; */
+
+}
+
+.book-section {
+    background-color: #C6D6AA;
+    width: 25%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    /* top align pannurathuku */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.book-section h1 {
+    color: #DAF7A6;
+}
+
+.book-section button {
+    background-color: #DAF7A6;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+}
+
+/* Add button style */
+
+
+/* Popup Overlay */
+.popup-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+
+}
+
+/* popup Box style */
+
+.popup-box {
+    padding: 30px;
+    background-color: #C6D6AA;
+    width: 35%;
+    border-radius: 10px;
+    position: absolute;
+    left: 34%;
+    top: 30%;
+    z-index: 2;
+    display: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.popup-section input {
+
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #DAF7A6;
+    margin-bottom: 10px;
+    padding: 10px;
+    outline: none;
+    font-weight: 400;
+    /* font-size: 20px; */
+}
+
+.popup-section textarea {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #DAF7A6;
+    padding: 10px;
+    outline: none;
+    font-weight: 400;
+    /* font-size: 20px; */
+}
+
+.popup-section button {
+    background-color: black;
+    color: #DAF7A6;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(229, 233, 232);
+        color: black;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+}
+
+/* Add Butoon Style */
+
+.btn {
+    padding: 30px;
+    position: absolute;
+    left: 89%;
+    top: 80%;
+    border-radius: 50%;
+    border: none;
+    background-color: #DAF7A6;
+    color: black;
+    font-size: 30px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+
+}
+
+/* Footer style */
+/* .footer {
+    background-color: #DAF7A6;
+    padding: 10px;
+    text-align: center;
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+} */
+
+.link a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/* Media Query */
+@media (max-width:768px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .book-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .book-section {
+        width: 98%;
+
+    }
+
+    .book-section button {
+        background-color: #DAF7A6;
+        border: none;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .btn {
+        position: absolute;
+        left: 72%;
+        top: 77%;
+        z-index: 1;
+        padding: 16px;
+    }
+
+    .popup-overlay {
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+    .popup-box {
+        width: 92%;
+        position: absolute;
+        left: 17px;
+        left: 14px;
+        z-index: 2;
+    }
+
+    .footer {
+        width: 100%;
+
+    }
+
+
+}
+
+
+
+
+
+
+/* @media (min-width:400px)and(max-width:766px) {
+
+    two screen phone ku media query 
+    
+} */

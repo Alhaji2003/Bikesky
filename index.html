@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BikeSky</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Teko&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Fontawsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Logo -->
+    <link rel="icon" href="img/download.png">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <img src="img/download.png" alt="logo">
+        <h1>BIKESKY</h1>
+    </nav>
+    <!-- Book Side -->
+    <div class="book-container">
+        <div class="book-section">
+            <h1>Yamaha Motor</h1>
+            <h3>Genichi Kawakami</h3>
+            <p>Yamaha Motor Co., Ltd. (ヤマハ発動機株式会社, Yamaha Hatsudōki Kabushiki gaisha) is a Japanese mobiglity
+                manufacturer
+                that produces motorcycles, motorboats, outboard motors, and other motorized products. The company was
+                established in the year 1955 </p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+
+    </div>
+
+    
+    <!-- Popup Overlay -->
+    <div class="popup-overlay"></div>
+    <!-- Popup Box -->
+    <div class="popup-box">
+        
+        <form class="popup-section">
+            <h2>Add Bike Company </h2>
+            <input type="text" placeholder="Company Name" id="bike-company-input"><br>
+            <input type="text" placeholder="Company Owner" id="bike-owner-input"><br>
+            <textarea placeholder="Short Description..." id="bike-description-input"></textarea>
+            <button id="add">Add</button>
+            <button class="btn-left" id="cancel">Cancel</button>
+        </form>
+        
+    </div>
+    <!-- Add Button -->
+    <div>
+        <button class="btn">+</button>
+    </div>
+    <!-- <footer class="footer">
+        <h1>Created By Al Haji</h1>
+        <p class="link"><i class="fa-regular fa-envelope"></i><a href="https://mail.google.com">haji66118@gmail.com</a></p>
+
+    </footer> -->
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
